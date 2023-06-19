@@ -1,9 +1,3 @@
-// Initially copied from Marlin's Ender 5 Pro config
-// designed for the BigTreeTech SKR Mini E3 V3.0
-//
-// https://github.com/MarlinFirmware/Configurations/blob/import-2.1.x/config/examples/Creality/Ender-5%20Pro/BigTreeTech%20SKR%20Mini%20E3%203.0%20with%20BLTouch-HighTemp/Configuration.h
-// Got to watch for Z leadscrew steps. Mine's 400 not 800.
-
 /**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2023 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -26,8 +20,15 @@
  *
  */
 #pragma once
-#error "Don't build with import-2.1.x configurations!"
-#error "Use the 'bugfix...' or 'release...' configurations matching your Marlin version."
+
+//#error "Don't build with import-2.1.x configurations!"
+//#error "Use the 'bugfix...' or 'release...' configurations matching your Marlin version."
+
+// Initially copied from Marlin's Ender 5 Pro config
+// designed for the BigTreeTech SKR Mini E3 V3.0
+//
+// https://github.com/MarlinFirmware/Configurations/blob/import-2.1.x/config/examples/Creality/Ender-5%20Pro/BigTreeTech%20SKR%20Mini%20E3%203.0%20with%20BLTouch-HighTemp/Configuration.h
+// Got to watch for Z leadscrew steps. Mine's 400 not 800.
 
 /**
  * Configuration.h
@@ -68,7 +69,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(C4rlos_E, Ender-5 Pro)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Craig, Ender-5)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 // @section machine
@@ -132,7 +133,7 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Ender-5 Pro"
+#define CUSTOM_MACHINE_NAME "Ender-5"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -1403,7 +1404,7 @@
 /**
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
  */
-#define BLTOUCH
+//#define BLTOUCH
 
 /**
  * MagLev V4 probe by MDD
